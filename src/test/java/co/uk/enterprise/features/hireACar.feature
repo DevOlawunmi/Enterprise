@@ -4,7 +4,8 @@ Feature: Search cars for hire
   I want to be able to search cars for hire
   So I can get more details about the car
 
-  Background: Given a user is on Enterprise rent-a-car homepage
+  Background:
+    Given a user is on Enterprise rent-a-car homepage
 
   Scenario Outline: User can successfully search cars for hire
     When user enters "<Pickup Location>"
@@ -16,5 +17,5 @@ Feature: Search cars for hire
     Examples:
       |Pickup Location|Pickup Date|Return Date|
       |M400GE|July 28|July 30|
-      |Oldham|Sept 5|Sept 7|
-      |Manchester Airport|August 8|August 10|
+#      |Oldham|Sept 5|Sept 7|
+#      |Manchester Airport|August 8|August 10|
